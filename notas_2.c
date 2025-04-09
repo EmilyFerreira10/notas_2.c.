@@ -3,6 +3,7 @@ int main()
 {
     float n1, n2, n3, media;
     float frequencia;
+    
 
     printf ("digite as tres notas:");
     scanf("%f %f %f", &n1, &n2, &n3);
@@ -18,20 +19,20 @@ int main()
     }
 
     if (media>8.0 && frequencia >=75.0){
-    printf("aprovado com distinção.");
+    printf("aprovado com distinção.", categoria);
     }
     else if (media>=6.0 && frequencia >=75.0){
-        printf("aprovado direto.");
+        printf("aprovado direto.", categoria);
     }
     else if ((media>=4.0 && media < 6.0 && frequencia >=75.0) ||
             (media>=6.0 &&  frequencia < 75.0)||
             (media>=4.0 && frequencia > 50.0 && frequencia <75.0)){
-        printf("vai para a final.");
+        printf("vai para a final.", categoria);
     }
     else
-        printf("reprovado direto.");
+        printf("reprovado direto.", categoria);
 {
     printf("\n O estudante foi %s pois teve media %.1f e frequencia %.1f%%.\n",
-           categoria, media, frequencia);
+           categoria, media, frequencia);}
     return 0;
 }
