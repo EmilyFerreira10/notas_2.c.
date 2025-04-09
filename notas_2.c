@@ -3,7 +3,7 @@ int main()
 {
     float n1, n2, n3, media;
     float frequencia;
-    
+    float categoria
 
     printf ("digite as tres notas:");
     scanf("%f %f %f", &n1, &n2, &n3);
